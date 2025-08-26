@@ -33,6 +33,7 @@ df
 ```
 df.shape
 ```
+
 <img width="198" height="63" alt="image" src="https://github.com/user-attachments/assets/5f9abfa5-15f7-4e9b-a6df-a2b9d0fb9738" />
 
 ```
@@ -44,16 +45,21 @@ df.nunique()
 ```
 df['Sex'].value_counts()
 ```
+
 <img width="348" height="134" alt="image" src="https://github.com/user-attachments/assets/51fbee21-f384-4c0d-afed-ff69d135e15b" />
+
 ```
 df.Survived.unique()
 ```
+
 <img width="183" height="53" alt="image" src="https://github.com/user-attachments/assets/50fda520-3a86-4776-9324-ebe8fd641d44" />
+
 ```
 df.rename(columns={"Sex":"Gender"},inplace=True)
 df
 ```
 <img width="1453" height="538" alt="image" src="https://github.com/user-attachments/assets/079f5a30-d117-4dbe-9081-8a718de3317d" />
+
 ```
 import seaborn as sns
 sns.countplot(data=df)
@@ -70,6 +76,7 @@ sns.countplot(x="Survived",hue="Gender",data=df)
 ```
 sns.catplot(x="Survived",hue="Gender",data=df,kind="count")
 ```
+
 <img width="843" height="636" alt="image" src="https://github.com/user-attachments/assets/37f53443-e2ae-4851-9c32-4a3cebbc9aab" />
 
 ```
@@ -87,11 +94,13 @@ df.boxplot(column="Survived",by="Gender")
 ```
 sns.scatterplot(data=df)
 ```
+
 <img width="847" height="579" alt="image" src="https://github.com/user-attachments/assets/017fad40-11c1-43cc-bdbb-fc4879704a96" />
 
 ```
 sns.scatterplot(x=df['Age'],y=df['Fare'])
 ```
+
 <img width="840" height="577" alt="image" src="https://github.com/user-attachments/assets/1ec142f6-839f-41a7-a8b0-743cd34551ac" />
 
 ```
@@ -103,7 +112,9 @@ sns.jointplot(x='Age',y='Fare',data=df,kind="hist")
 ```
 sns.pairplot(data=df)
 ```
+
 <img width="1640" height="670" alt="image" src="https://github.com/user-attachments/assets/8f58c5e4-543d-432b-a615-22e3cbf8c179" />
+
 
 <img width="1526" height="746" alt="image" src="https://github.com/user-attachments/assets/56a89993-74bf-49de-b323-b4431e33d0d8" />
 
