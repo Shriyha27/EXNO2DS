@@ -25,7 +25,7 @@ STEP 8: Use heatmap method of representation to show relationships between two v
 ## CODING AND OUTPUT
 ```
 import pandas as pd
-df=pd.read_csv("C:\\Users\\Pandiyan\\Downloads\\titanic_dataset.csv")
+df=pd.read_csv("C:\\Users\\DS\\Downloads\\titanic_dataset.csv")
 df
 ```
 <img width="894" height="745" alt="image" src="https://github.com/user-attachments/assets/de6f2c9b-1f6e-4c98-977e-a2f050f18739" />
